@@ -5,7 +5,7 @@ const cors = require("cors");
 const app = express();
 const port = process.env.PORT || 4000;
 conectarDB();
-
+console.log("hola")
 app.use(express.json());
 app.use(cors());
 app.use("/api/user", require("./routes/user"));
